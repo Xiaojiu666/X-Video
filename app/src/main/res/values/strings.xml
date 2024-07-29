@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">X-Video</string>
+    <string name="capture">Capture</string>
 </resources>
