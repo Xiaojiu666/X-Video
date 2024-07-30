@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.example.android.camera2.basic.fragments
+package com.nine.x.video.camear2.fragments
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Matrix
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.util.Log
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.widget.ImageView
 import androidx.fragment.app.Fragment

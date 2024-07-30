@@ -110,7 +110,7 @@ class SelectorFragment : Fragment() {
                 // All cameras *must* support JPEG output so we don't need to check characteristics
                 availableCameras.add(
                     FormatItem(
-                        "$orientation JPEG ($id)", id, ImageFormat.JPEG)
+                        "$orientation JPEG ($id)", id, ImageFormat.YUV_420_888)
                 )
 
                 // Return cameras that support RAW capability

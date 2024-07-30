@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/permissions_fragment"
-        android:name="com.example.android.camera2.basic.fragments.PermissionsFragment"
+        android:name="com.nine.x.video.camear2.fragments.PermissionsFragment"
         android:label="Permissions" >
 
         <action
@@ -75,7 +75,7 @@
 
     <fragment
         android:id="@+id/image_viewer_fragment"
-        android:name="com.example.android.camera2.basic.fragments.ImageViewerFragment"
+        android:name="com.nine.x.video.camear2.fragments.ImageViewerFragment"
         android:label="Image Viewer" >
 
         <argument

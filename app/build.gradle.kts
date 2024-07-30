@@ -1,7 +1,9 @@
+@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    id("com.android.application")
-    kotlin("android")
-    id("androidx.navigation.safeargs.kotlin") // 添加 Safe Args 插件
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.kotlinAndroid)
+    id("androidx.navigation.safeargs")
+    kotlin("kapt")
 }
 
 android {
@@ -47,8 +49,8 @@ android {
 
 dependencies {
 
-    implementation (libs.androidx.lifecycle.viewmodel.ktx)
-    implementation (libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
 
 
     implementation(libs.core.ktx)
@@ -57,8 +59,12 @@ dependencies {
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
 
-    implementation (libs.androidx.navigation.fragment.ktx)
-    implementation  (libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.11.0")
+    kapt("com.github.bumptech.glide:compiler:4.11.0")
 
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
