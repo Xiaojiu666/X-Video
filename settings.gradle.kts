@@ -16,4 +16,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "X-Video"
 include(":app")
- 
+include(":module_texture")
+include(":module_camera2")

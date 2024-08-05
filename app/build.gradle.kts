@@ -57,6 +57,7 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
+    implementation(project(":module_texture"))
     testImplementation(libs.junit)
 
     implementation(libs.androidx.navigation.fragment.ktx)
